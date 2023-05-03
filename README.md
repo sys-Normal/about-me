@@ -1,4 +1,5 @@
-Goal is flexible
+<div align=center>
+<h1>Goal is flexible</h1>
 
 start : 2023-05-03
 
@@ -9,6 +10,10 @@ Time taken to update
 
 reference
 
-https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Media_queries
-https://developer.mozilla.org/en-US/docs/Web/CSS/grid
-https://discord.com/
+<ul>
+    <li>https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Media_queries</li>
+    <li>https://developer.mozilla.org/en-US/docs/Web/CSS/grid</li>
+    <li>https://discord.com/</li>
+</ul>
+
+
