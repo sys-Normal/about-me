@@ -1,0 +1,17 @@
+.hover_slow_transition_background_color{
+    transition: 0.3s;
+}
+.hover_slow_transition_background_color:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .hover_slow_transition_background_color{
+        transition: none;
+    }
+    .hover_slow_transition_background_color:hover{
+        cursor: auto;
+        background-color: transparent;
+    }
+}

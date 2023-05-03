@@ -6,19 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>simple page</title>
     <link rel="stylesheet" href="screen.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="container.css">
 </head>
 <body>
     <header class="flexibleBox simple_header ">
-        <h1>간단한 페이지 제작</h1>
+        <h1>simple page creation</h1>
+
+        
     </header>
     <section class="flexibleBox simple_section simple_section_1">
-        <h2>1번째 단락</h2>
+       
+      <div class="max_width_1260_block">
+
+        <div class="side_content_grid_container">
+
+          <div class="simple_image_container grid_image_container">
+              <div class="simple_temp_image"></div>
+          </div>
+
+          <div class="gird_text_container">
+            <h2 class="other_space_title">section 1 title</h2>
+            <div class="other_space_desc">
+              innerText
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="flexibleBox simple_section simple_section_2">
-        <h2>2번째 단락</h2>
+        <h2>section 2</h2>
+
+        <div class="simple_contents_container">
+            <ul class="column_grid_cotainer">
+                <li class="simple_contents simple_contents-1">contents-1</li>
+                <li class="simple_contents simple_contents-2">contents-2</li>
+                <li class="simple_contents simple_contents-3">contents-3</li>
+                <li class="simple_contents simple_contents-4">contents-4</li>
+                <li class="simple_contents simple_contents-5">contents-5</li>
+            </ul>
+        </div>
     </section>
     <footer class="flexibleBox simple_footer">
-        <p>마무리 단락</p>
+        <!-- <p>footer</p> -->
+        <ul class="column_grid_cotainer">
+            <li class="simple_footer_list simple_footer_list-1 hover_slow_transition_background_color">footer_list-1</li>
+            <li class="simple_footer_list simple_footer_list-2 hover_slow_transition_background_color">footer_list-2</li>
+            <li class="simple_footer_list simple_footer_list-3 hover_slow_transition_background_color">footer_list-3</li>
+            <li class="simple_footer_list simple_footer_list-4 hover_slow_transition_background_color">footer_list-4</li>
+            <li class="simple_footer_list simple_footer_list-5 hover_slow_transition_background_color">footer_list-5</li>
+        </ul>
     </footer>
 </body>
 </html>
