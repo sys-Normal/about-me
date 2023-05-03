@@ -1,0 +1,30 @@
+body, header, section, h1, h2, footer{
+    margin: 0;
+    padding: 0;
+}
+
+.flexibleBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh);
+
+}
+
+.simple_header{
+    height:120px;
+    background-color: gray;
+}
+
+.simple_section{
+    background-color: yellow;
+}
+
+.simple_section:nth-child(odd){
+    background-color: brown;
+}
+
+.simple_footer{
+    height: 120px;
+    background-color: gray;
+}
