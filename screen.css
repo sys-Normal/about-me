@@ -26,6 +26,7 @@ li{
 .simple_header{
     height:120px;
     background-color: gray;
+    transition: all 0.3s;
 }
 
 .simple_section{
