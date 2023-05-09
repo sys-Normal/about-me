@@ -5,10 +5,16 @@ start : 2023-05-03
 
 ### Time taken to update
 
-23-05-03_1 - 00:15:58  
-23-05-03_2 - 02:56:15  
+23-05-03_1
+ : default flexible screen setting
+23-05-03_2
+ : flexible grid added
 
-23-05-08_1 - 01:36:00
+23-05-08_1
+ : js setting, IntersectionObserver test
+
+23-05-09_1
+ : change scroll event/design, file directory
 
 ### Languages
 
@@ -22,6 +28,7 @@ start : 2023-05-03
 
 <div>
     <img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=flat&logo=VisualStudioCode&logoColor=white" />
+    <img src="https://img.shields.io/badge/adobephotoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white">
 </div>
 
 ### reference

@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simple page</title>
-    <link rel="stylesheet" href="screen.css">
-    <link rel="stylesheet" href="colors.css">
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="animation.css">
-    <link rel="stylesheet" href="container.css">
+    <title>It's FUN</title>
+    <link rel="icon" type="image/x-icon" href="./source/favicon.ico">
+    <link rel="stylesheet" href="./style/font.css">
+    <link rel="stylesheet" href="./style/screen.css">
+    <link rel="stylesheet" href="./style/colors.css">
+    <link rel="stylesheet" href="./style/grid.css">
+    <link rel="stylesheet" href="./style/animation.css">
+    <link rel="stylesheet" href="./style/container.css">
 </head>
 <body>
     <header id="toggleBGC" class="flexibleBox simple_header ">
-      <h1>simple page creation</h1>
-      
+      <div class="max_width_1260_block header_center_contents">
+        <div class="header_padding_area">
+          <div class="header_top_area">
+            <div class="logo_touchable_container">
+              <!-- <h1 class="fun_main_logo_text"></h1> -->
+              <img src="./source/image/FUN_logo_text_white.png" alt="Friendly UI Navigation">
+              <img src="./source/image/FUN_logo_text.png" alt="Friendly UI Navigation">
+            </div>
+            <div class="other_content_link_container">
+              <img src="./source/image/GitHub_Logo_White.png" alt="github logo">
+              <img src="./source/image/GitHub_Logo.png" alt="github logo">
+            </div>
+          </div>
+          <div class="header_bottom_area">
+            <h1 class="header_headline">
+              It's not <span class="header_highlight_text highlight_text_white">FUN?</span> <br>
+              I'll make it <span class="header_highlight_text highlight_text_blue">FUN</span>
+              <!-- 페이지가 <span>뻔</span>하면 어떤가요
+              <span>편</span>하면 됐죠.
+              그런데 펀 하기까지 한건 어떨까요? -->
+            </h1>
+          </div>
+        </div>
+      </div>
     </header>
+    <!-- <section class="flexibleBox">
+      <div>hi</div>
+    </section> -->
+
+
     <section class="flexibleBox simple_section simple_section_1">
        
       <div class="max_width_1260_block">
@@ -23,13 +52,14 @@
         <div class="side_content_grid_container">
 
           <div class="simple_image_container grid_image_container">
-              <div class="simple_temp_image"></div>
+              <!-- <div class="simple_temp_image"></div> -->
+              <img class="simple_temp_image" src="./source/image/simple_temp_image_1.png" alt="" srcset="">
           </div>
 
-          <div class="gird_text_container">
-            <h2 class="other_space_title">section 1 title</h2>
+          <div class="grid_text_container">
+            <h2 class="other_space_title">Section 1 Long Detail Title</h2>
             <div class="other_space_desc">
-              innerText
+              I don't know what sentences to put in, but I think this length is usually enough
             </div>
           </div>
         </div>
@@ -63,5 +93,6 @@
     <script src="./utils.js"></script>
     <script src="./loading.js"></script>
     <script src="./function/SlideDownToggleBackgroundColor.js"></script>
+    <script src="./function/SlideUpDownFadeInAnimation.js"></script>
 </body>
 </html>

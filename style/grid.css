@@ -9,16 +9,16 @@
 
 .side_content_grid_container{
     display: grid;
-    padding: 120px 40px;
+    padding: 60px 40px;
     grid-template-columns: repeat(var(--grid-columns),1fr);
     gap: 0 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .grid_image_container{
     grid-column: span 7;
 }
-.gird_text_container{
+.grid_text_container{
     grid-column: 9/span 4;
 }
 
@@ -31,7 +31,7 @@
     .grid_image_container{
         grid-column: span 4;
     }
-    .gird_text_container{
+    .grid_text_container{
         grid-column: 5/span 4;
     }
     
@@ -40,7 +40,7 @@
     :root {
         --grid-columns:4;
     }
-    .gird_text_container{
+    .grid_text_container{
         grid-column: span var(--grid-columns, 4);
     }
 }

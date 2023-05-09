@@ -1,0 +1,15 @@
+@font-face{
+    font-family: "GlitchGoblin";
+    /* font-style:'normal';
+    font-weight: 400; */
+    src: url('../source//font/GlitchGoblin.ttf');
+}
+
+@font-face{
+    font-family: "NotoSans-Black";
+    src: url('../source/font/NotoSans-Black.ttf');
+}
+@font-face{
+    font-family: "NotoSans-Regular";
+    src: url('../source/font/NotoSans-Regular.ttf')
+}

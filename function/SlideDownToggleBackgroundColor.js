@@ -2,7 +2,7 @@ function ToggleBackgroundColor(){
     const target = doc.querySelectorAll('#toggleBGC');    
     if(IsValid(target) && target.length !== 0){
         const showLog = (value) => {
-            value.classList.toggle('whiteBackgroundColor ');                   
+            value.classList.toggle('whiteBackgroundColor');                   
         }
         target.forEach(showLog)
     }
@@ -35,5 +35,5 @@ function DetectNowScrollTop() {
 }
 
 if(IsLoadingDone){
-    DetectNowScrollTop();
+    // DetectNowScrollTop();
 }
