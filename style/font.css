@@ -10,6 +10,10 @@
     src: url('../source/font/NotoSans-Black.ttf');
 }
 @font-face{
+    font-family: "NotoSans-Bold";
+    src: url('../source/font/NotoSans-Bold.ttf');
+}
+@font-face{
     font-family: "NotoSans-Regular";
     src: url('../source/font/NotoSans-Regular.ttf')
 }

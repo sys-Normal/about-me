@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./style/container.css">
 </head>
 <body>
+  <!-- <div class="startLine"></div> -->
     <header id="toggleBGC" class="flexibleBox simple_header ">
       <div class="max_width_1260_block header_center_contents">
         <div class="header_padding_area">
@@ -21,15 +22,15 @@
             <div class="logo_touchable_container">
               <!-- <h1 class="fun_main_logo_text"></h1> -->
               <img src="./source/image/FUN_logo_text_white.png" alt="Friendly UI Navigation">
-              <img src="./source/image/FUN_logo_text.png" alt="Friendly UI Navigation">
+              <!-- <img src="./source/image/FUN_logo_text.png" alt="Friendly UI Navigation"> -->
             </div>
             <div class="other_content_link_container">
               <img src="./source/image/GitHub_Logo_White.png" alt="github logo">
-              <img src="./source/image/GitHub_Logo.png" alt="github logo">
+              <!-- <img src="./source/image/GitHub_Logo.png" alt="github logo"> -->
             </div>
           </div>
           <div class="header_bottom_area">
-            <h1 class="header_headline">
+            <h1 class="header_headline no-select">
               It's not <span class="header_highlight_text highlight_text_white">FUN?</span> <br>
               I'll make it <span class="header_highlight_text highlight_text_blue">FUN</span>
               <!-- 페이지가 <span>뻔</span>하면 어떤가요
@@ -45,36 +46,63 @@
     </section> -->
 
 
-    <section class="flexibleBox simple_section simple_section_1">
-       
-      <div class="max_width_1260_block">
-
-        <div class="side_content_grid_container">
-
-          <div class="simple_image_container grid_image_container">
-              <!-- <div class="simple_temp_image"></div> -->
-              <img class="simple_temp_image" src="./source/image/simple_temp_image_1.png" alt="" srcset="">
+    <section class="flexibleBox simple_section simple_section_2">
+        <div class="profile_container">
+          <div class="profile_photo_container">
+            <img class="profile_pixel_face" src="./source/image/pixel_face.png" alt="">
           </div>
-
-          <div class="grid_text_container">
-            <h2 class="other_space_title">Section 1 Long Detail Title</h2>
-            <div class="other_space_desc">
-              I don't know what sentences to put in, but I think this length is usually enough
-            </div>
+          <div class="profile_text_area">
+            <h2 class="profile_name">wonwook Ko</h2>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="flexibleBox simple_section simple_section_2">
-        <h2>section 2</h2>
 
         <div class="simple_contents_container">
             <ul class="column_grid_cotainer">
-                <li class="simple_contents simple_contents-1">contents-1</li>
-                <li class="simple_contents simple_contents-2">contents-2</li>
-                <li class="simple_contents simple_contents-3">contents-3</li>
-                <li class="simple_contents simple_contents-4">contents-4</li>
-                <li class="simple_contents simple_contents-5">contents-5</li>
+                <li class="simple_contents simple_contents-1">
+                  <div class="capture_container">
+                    <img class="hisotry_capture" src="./source//image//history_page_1.jpg" alt="">
+                    <!-- <div class="captureDIM"></div> -->
+                  </div>
+                  <div class="desc_container">
+                    <p>facebook_renewall</p>
+                  </div>
+                </li>
+                <li class="simple_contents simple_contents-2">
+                  <div class="capture_container">
+                    <img class="hisotry_capture" src="./source//image//history_page_2.jpg" alt="">
+                    <!-- <div class="captureDIM"></div> -->
+                  </div>
+                  <div class="desc_container">
+                    <p>SH_recreate identically</p>
+                  </div>
+                </li>
+                <li class="simple_contents simple_contents-3">
+                  <div class="capture_container">
+                    <img class="hisotry_capture" src="./source//image//history_page_3.jpg" alt="">
+                    <!-- <div class="captureDIM"></div> -->
+                  </div>
+                  <div class="desc_container">
+                    <p>BR_recreate identically</p>
+                  </div>
+                </li>
+                <li class="simple_contents simple_contents-4">
+                  <div class="capture_container">
+                    <img class="hisotry_capture" src="./source//image//history_page_4.jpg" alt="">
+                    <!-- <div class="captureDIM"></div> -->
+                  </div>
+                  <div class="desc_container">
+                    <p>2019_portfolio</p>
+                  </div>
+                </li>
+                <li class="simple_contents simple_contents-5">
+                  <div class="capture_container">
+                    <img class="hisotry_capture" src="./source//image//history_page_5.jpg" alt="">
+                    <!-- <div class="captureDIM"></div> -->
+                  </div>
+                  <div class="desc_container">
+                    <p>aire_unfinished project</p>
+                  </div>
+                </li>
             </ul>
         </div>
     </section>
@@ -94,5 +122,7 @@
     <script src="./loading.js"></script>
     <script src="./function/SlideDownToggleBackgroundColor.js"></script>
     <script src="./function/SlideUpDownFadeInAnimation.js"></script>
+    <script src="./function/CheckViewFocus.js"></script>
+    <script src="./function/DetectMouseMove.js"></script>
 </body>
 </html>

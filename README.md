@@ -3,10 +3,10 @@
 ### Goal is flexible
 start : 2023-05-03
 
-### Time taken to update
+### Update content
 
 23-05-03_1
- : default flexible screen setting
+ : default flexible screen setting 
 23-05-03_2
  : flexible grid added
 
@@ -15,6 +15,9 @@ start : 2023-05-03
 
 23-05-09_1
  : change scroll event/design, file directory
+
+23-05-10_1
+ : design change
 
 ### Languages
 
@@ -28,7 +31,6 @@ start : 2023-05-03
 
 <div>
     <img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=flat&logo=VisualStudioCode&logoColor=white" />
-    <img src="https://img.shields.io/badge/adobephotoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white">
 </div>
 
 ### reference

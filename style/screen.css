@@ -1,4 +1,4 @@
-body, header, section, h1, h2, h3, h4, h5, h6, footer, ul, li{
+body, header, section, h1, h2, h3, h4, h5, h6, footer, ul, li, p, span, img, div{
     margin: 0;
     padding: 0;
 }
@@ -14,6 +14,15 @@ ul{
 li{
     text-decoration: none;
 }
+body{
+    background-color: #121212
+}
+
+.startLine{
+    width: 100%;
+    height: 2px;
+    background-color: #4d1890;
+}
 
 .flexibleBox{
     display: flex;
@@ -26,7 +35,8 @@ li{
     overflow:hidden;
     position: relative;
     height: auto;
-    background-color: rgb(128, 128, 128);
+    /* background-color: rgb(48, 48, 48); */
+    background-color: #508f50;
     transition: all 0.3s;
 }
 .header_center_contents{
@@ -37,8 +47,7 @@ li{
 }
 .header_top_area{
     display: flex;
-    height:120px;
-    
+    /* height:120px; */
     justify-content: space-between;
 }
 
@@ -63,12 +72,23 @@ li{
     font-family: "NotoSans-Regular", "serif";
     /* font-weight: 900; */
     font-size: 50px;
-    color: rgba(255,255,255,1);
+    color: rgba(255,255,255,1);    
 }
+.no-select{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
 .header_highlight_text{
     font-size: 70px;
     font-family: "GlitchGoblin";
     /* font-family: "NotoSans-black", "serif"; */
+    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .highlight_text_white{
@@ -77,6 +97,9 @@ li{
 }
 .highlight_text_blue{
     color: rgba(92, 80, 255, 0.7)
+}
+.focus_test{
+    background-color: rgb(80, 143, 80);
 }
 .header_bg{
     position: absolute;
@@ -91,9 +114,9 @@ li{
     /* background-color: yellow; */
 }
 
-.simple_section:nth-child(odd){
+/* .simple_section:nth-child(odd){
     background-color: #f6f6f6;
-}
+} */
 
 .simple_section_1{
     display: flex;
@@ -102,10 +125,7 @@ li{
     padding: 120px 0;
     justify-content: center;
 }
-
-.simple_image_container{
-    
-}
+.simple_image_container{}
 /* temp */
 .simple_temp_image{
     /* width: 680px; */
@@ -134,6 +154,34 @@ li{
     flex-direction: column;
 }
 
+/* 프로필 구역 */
+.profile_container{
+    width: 300px;
+    text-align: center;
+}
+
+.profile_photo_container{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background-color: #3d3a71;
+    border-radius: 50%;
+}
+.profile_pixel_face{
+    width: 100%;
+    object-fit: contain;
+}
+.profile_text_area{
+    padding-top: 10px;
+}
+
+.profile_name{
+    color: #fff;
+}
+
+/* 프로필 구역 끝 */
+
+/* 컨텐츠 구역 */
 .simple_contents_container{
     display: flex;
     width: 100%;
@@ -147,17 +195,58 @@ li{
 }
 .simple_contents{
     display: flex;
-    height: 100px;
+    width: 300px;
+    height: auto;
+    /* height: 100px; */
     /* grid-column: span 2; */
     /* grid-row: span 3; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: blue; */
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     box-sizing: border-box;
+    cursor: pointer;
+}
+.capture_container{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+.capture_container:after{
+    opacity: 0;
+    transition: all 1s;
+}
+.simple_contents:hover .capture_container:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    content: "";
+    opacity: 1;
 }
 
+.hisotry_capture{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: contain;
+}
 
+.desc_container{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: #3d3a71;
+    font-family: "NotoSans-Bold", "serif";
+    color: #fff;
+}
+
+/* 컨텐츠 구역 끝 */
 
 
 .simple_footer{
