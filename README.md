@@ -1,6 +1,6 @@
-# ~~Flexible Page~~ FUN page
+# About me
 
-### ~~Goal is flexible~~ Friendly UI Navigation
+### Friendly UI Navigation
 start : 2023-05-03
 
 ### Update content
