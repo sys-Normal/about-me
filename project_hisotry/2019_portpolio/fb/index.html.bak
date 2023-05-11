@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Facebook sign up renewal </title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/function.js"></script>	
+
+</head>
+<body>
+	<div id="wrap">
+		
+		<header>
+			<h1><a href="#">Facebook</a></h1>
+			
+			<ul class="container">
+				<li><a href="news">뉴스</a></li>
+				<li class="login"><a href="#">기존 사용자</a></li>
+				<li class="register"><a href="#">신규 사용자</a></li>
+				
+			</ul>
+		</header>
+		<section>
+			<article>페북뉴스</article>
+			<article>로그인</article>
+			<article>회원가입</article>
+		</section>
+		<footer></footer>
+		
+	</div>
+</body>
+</html>

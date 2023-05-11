@@ -1,0 +1,1039 @@
+﻿@charset "utf-8";
+
+/* 둥근모체 */
+@font-face{
+    font-family: DGM;
+    src: local(DungGeunMo);
+    src: url('../fonts/DungGeunMo.eot');
+    src: url('../fonts/DungGeunMo.woff') format('woff');
+}
+
+body{
+    overflow-x:hidden;
+    /* overflow-y:hidden; */
+}
+
+/* #wrap{} */
+
+/* 시작화면 */
+#start{
+    /* display: none; */
+    position: fixed;
+    font-family: "rubik Mono One";
+    color: #fff;
+    background-image: url(../images/intro_start_bg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-color: rgba(51,51,51,1);
+    background-repeat: no-repeat;
+    z-index:100;
+}
+#start>.title{
+    position: absolute;
+    top:40%;
+    left:50%;
+    min-width:459px;
+    font-size: 70px;
+}
+#start>p>span{
+    display: block;
+    position: absolute;
+    top:50%;
+    left:0;
+    width:1071px;
+    height:25px;
+    text-indent: -9999px;
+    background-color: #333;
+    opacity:0.5;
+}
+
+#start>h1{
+    position: absolute;
+    top:55%;
+    left:50%;
+    min-width:450px;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+#start>h1>span{
+    display: block;
+    position: absolute;
+    top:50%;
+    left:0;
+    /* width:1130px; */
+    width:1000px;
+    height:25px;
+    text-indent: -9999px;
+    background-color: #333;
+    opacity:0.5;
+}
+
+#start>.click{
+    display: none;
+    position: absolute;
+    bottom:150px;
+    left:50%;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1525px){
+    #start>.title{font-size: 50px;}
+    #start>h1{font-size: 50px;}
+}
+
+
+@media screen and (max-width:1145px){
+    #start>.title{font-size: 40px;}
+    #start>h1{font-size: 40px;}
+}
+
+
+@media screen and (max-width:768px){
+    #start>.title{font-size: 30px;}
+    #start>h1{font-size: 28px;}
+}
+
+
+/* 메인 화면 */
+header{
+    position: relative;
+    min-height:927px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url(../images/intro_main_bg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header>.bg{
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header>.bg>.logo{
+    height:86px;
+    margin:0 auto;
+    padding:60px 0;
+    text-indent: -9999px;
+    background-image: url(../images/intro_main_logo_evt2.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+header>.container{
+    display:flex;
+    height:80px;
+    margin:10px 0 0;
+    flex-flow:wrap;
+    justify-content:space-between;
+}
+
+header>.container>.cont{
+    display: inline-block;
+    position: relative;
+    top:0;
+    width:22.9%;
+    height:80px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: DGM;
+    text-align: center;
+    text-transform:uppercase;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid #9c69e2;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+
+header>.container>.cont:hover{
+    transform:scale(1.05);
+    border: 1px solid #02cffe;
+}
+
+header>.container>.cont.on{
+    color: rgba(204,2,254,1);
+    border: 1px solid #02cffe;
+}
+
+header>.container>.con4{
+    margin-right: 0 ;
+}
+
+header>#whoAmI{
+    position: relative;
+    height:500px;
+    margin:50px 0 0;
+    padding:10px;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid #9c69e2;
+    box-sizing:border-box;
+}
+
+/* about me */
+header>#whoAmI>.about{
+    height:480px;
+    background-image : url(../images/tetris.gif);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+/* header>#whoAmI>.about>.container{} */
+/* header>#whoAmI>.about>.container>.slides-screen{} */
+/* header>#whoAmI>.about>.container>.slides-screen>ul{} */
+/* header>#whoAmI>.about>.container>.slides-screen>ul>li.page1{} */
+
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1{
+    cursor:default;
+    
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.photo{
+    overflow:hidden;
+    width:220px;
+    height:280px;
+    margin:20px 0 20px 20px;
+    text-indent: -9999px;
+    background-image: url(../images/intro_aboutme_img.jpg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px solid #9c69e2;
+    box-sizing:border-box;
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text{
+    width:450px;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: "Press Start 2P";
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text:hover{
+    color: rgba(204,2,254,1);
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text>span{
+    display: inline-block;
+    font-size: 22px;
+    font-family: DGM;
+    padding-top: -5px;
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text:last-child{
+    margin-bottom: 0;
+}
+
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2{
+    position: absolute;
+    top:30px;
+    right:10px;
+    color: #fff;
+    cursor:default;
+}
+/* header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2>li{} */
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2>li>.title{
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: DGM;
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2>li>.info{
+    font-size: 14px;
+    font-family: "나눔고딕","Nanum Gothic";
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2>li>.info>span{
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2>li>.info>span:last-child{
+    margin-bottom: 50px;
+}
+
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2>li>.info>span>em{
+    background-color: rgba(204,2,254,0.4);
+}
+
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3{
+    position: absolute;
+    top:50px;
+    left:280px;
+    color: #fff;
+    cursor:default;
+}
+/* header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3>{} */
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3>p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Press Start 2P";
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3>p:before{
+    margin-right: 10px;
+    content:'\2611';
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3>p:last-child{
+    margin-bottom: 0;
+}
+header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3>p>span{
+    font-family: DGM;
+    font-size: 20px;
+    padding-top:-15px;
+}
+
+/* header>#whoAmI>.about>.container>.slides-screen>ul>li.page2{} */
+
+/* 사용x */
+header>#whoAmI>.about>.container>.slides-pagination{display: none;}
+header>#whoAmI>.about>.container>.slides-move{display: none;}
+header>#whoAmI>.about>.container>.clse{display: none;}
+
+
+/* 스킬 */
+header>#whoAmI>.skill{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-family: DGM;
+}
+header>#whoAmI>.skill>.width-bar{
+    display: none;
+    /* width : #whoAmI.width - js */
+    
+}
+/* header>#whoAmI>.skill>.width-bar>.container{} */
+header>#whoAmI>.skill>.width-bar>.container>.block{
+    float:left;
+    width:50%;
+    height:100px;
+}
+
+header>#whoAmI>.skill>.width-bar>.container>.block>h4{
+    float:left;
+    width:27%;
+    height:30px;
+    margin-right: 5%;
+    line-height: 30px;
+    text-align: center;
+}
+
+header>#whoAmI>.skill>.width-bar>.container:first-child>.block>h4{
+    font-size: 16px;
+    font-family: "Press Start 2P";
+}
+header>#whoAmI>.skill>.width-bar>.container:first-child>.block:first-child>h4{
+    font-size: 20px;
+    font-family: DGM;
+}
+header>#whoAmI>.skill>.width-bar>.container:nth-child(2)>.block>h4{
+    font-family: DGM;
+}
+
+header>#whoAmI>.skill>.width-bar>.container:nth-child(2)>.block:first-child>h4{
+    font-size: 16px;
+    font-family: "Press Start 2P";
+}
+
+header>#whoAmI>.skill>.width-bar>.container>.block>.percent{
+    position: relative;
+    float:left;
+    width:65%;
+    margin-right:3%;
+    border: 3px solid #eee;
+    box-sizing:border-box;
+}
+header>#whoAmI>.skill>.width-bar>.container>.block>.percent>.bar{
+    width:0%; /* js */
+    height:30px;
+    background: rgb(229,112,231); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(229,112,231,1) 0%, rgba(200,94,199,1) 47%, rgba(2,207,254,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(229,112,231,1) 0%,rgba(200,94,199,1) 47%,rgba(2,207,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(229,112,231,1) 0%,rgba(200,94,199,1) 47%,rgba(2,207,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
+    transition:all 1s;
+}
+header>#whoAmI>.skill>.width-bar>.container>.block>.percent>.bar>span{
+    position: absolute;
+    bottom:-30px;
+    right:0;
+}
+
+header>#whoAmI>.skill>.circle-bar{
+    display: none;
+    height:150px;
+    text-align: center;
+}
+header>#whoAmI>.skill>.circle-bar>.container{
+    display: flex;
+    width:100%;
+    flex-flow:wrap;
+    justify-content:space-between;
+}
+header>#whoAmI>.skill>.circle-bar>.container>.chart{
+    float:left;
+    position: relative;
+    width:15%;
+    min-width:120px;
+    height:120px;
+    margin-right: 2.5%;
+}
+header>#whoAmI>.skill>.circle-bar>.container>.chart:first-child{
+    margin-left: 2.5%;
+}
+header>#whoAmI>.skill>.circle-bar>.container>.chart:last-child{
+    margin-right: 0;
+}
+header>#whoAmI>.skill>.circle-bar>.container>.chart>.gage{
+    position: absolute;
+    top:52%;
+    left:50%;
+    margin-left: -15px;
+}
+header>#whoAmI>.skill>.circle-bar>.container>.chart>.gage:after{content:"%";}
+header>#whoAmI>.skill>.circle-bar>.container>.chart>.tit{
+    position: absolute;
+    top:45%;
+    left:50%;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+header>#whoAmI>.portfolio{
+    color: #fff;
+    /* background-color: #f00; */
+}
+header>#whoAmI>.portfolio>ul{
+    display: flex;
+    height:480px;
+    justify-content:space-around;
+    align-items:center;
+}
+header>#whoAmI>.portfolio>ul>li{
+    display: inline-block;
+    position: relative;
+    width:25%;
+    height:400px;
+    color: rgba(255,255,255,1);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #9c69e2;
+    box-sizing:border-box;
+}
+header>#whoAmI>.portfolio>ul>li:nth-child(1){
+    background-image: url(../images/intro_pf_01.jpg);
+}
+header>#whoAmI>.portfolio>ul>li:nth-child(2){
+    background-image: url(../images/intro_pf_02.jpg);
+}
+header>#whoAmI>.portfolio>ul>li:nth-child(3){
+    background-image: url(../images/intro_pf_03.jpg);
+}
+
+header>#whoAmI>.portfolio>ul>li:hover{
+    border: 1px solid #02cffe;
+}
+header>#whoAmI>.portfolio>ul>li>.info{
+    display: none;
+}
+
+header>#whoAmI>.portfolio>ul>li:hover>.info{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.6);
+}
+header>#whoAmI>.portfolio>ul>li:hover>.info>span{
+    display: block;
+    width:100%;
+    height:40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    font-family: DGM;
+    background-color: #02cffe;
+}
+
+header>#whoAmI>.portfolio>ul>li>.move{
+    display: flex;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    width:100px;
+    height:50px;
+    margin-left: -50px;
+    justify-content: space-around;
+}
+header>#whoAmI>.portfolio>ul>li>.move>a:first-child{
+    display: inline-block;
+    position: relative;
+    width:30px;
+    height:30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    text-indent: -9999px;
+    color: #fff;
+    transform:rotate(45deg);
+    border: 1px solid #02cffe;
+    box-sizing:border-box;
+}
+header>#whoAmI>.portfolio>ul>li>.move>a:hover{
+    background-color: #02cffe;
+}
+header>#whoAmI>.portfolio>ul>li>.move>a:first-child>span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:30px;
+    height:30px;
+    line-height: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    text-indent: 0;
+    transform:rotate(-45deg);
+}
+
+header>#whoAmI>.portfolio>ul>li>.move>a:last-child{
+    display: inline-block;
+    position: relative;
+    width:30px;
+    height:30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    text-indent: -9999px;
+    color: #fff;
+    transform:rotate(45deg);
+    border: 1px solid #02cffe;
+    box-sizing:border-box;
+}
+header>#whoAmI>.portfolio>ul>li>.move>a:last-child>span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:30px;
+    height:30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    font-size: 16px;
+    text-align: center;
+    transform:rotate(-45deg); 
+    background-image: url(../images/intro_pf_zoom_img.png);
+    background-position: 50% 50%;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+header>#whoAmI>.portfolio>.popup_box{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.7);
+}
+/* header>#whoAmI>.portfolio>.popup_box>ul{} */
+header>#whoAmI>.portfolio>.popup_box>ul>li{
+    display: none;
+    position: relative;
+    top:0;
+    left:50%;
+    width:800px;
+    height:800px;
+    margin:50px auto 0;
+    margin-left: -400px;
+    border: 3px solid #02cffe;
+}
+
+header>#whoAmI>.portfolio>.popup_box>ul>li>img{
+    display: block;
+    width:100%;
+}
+
+header>#whoAmI>.portfolio>.popup_box>ul>.pop3{
+    height:700px;
+}
+
+
+header>#whoAmI>.epilogue{
+    position: relative;
+    color: #fff;
+}
+
+header>#whoAmI>.epilogue>.qna{
+    margin-bottom: 30px;
+    padding-top: 35px;
+    text-align: center;
+    font-size: 30px;
+    font-family: DGM;
+}
+header>#whoAmI>.epilogue>.qna>span{
+    font-weight: 500;
+    font-size: 40px;
+}
+header>#whoAmI>.epilogue>.slides{
+    overflow:hidden;
+    position: relative;
+}
+header>#whoAmI>.epilogue>.slides>li{
+    position: absolute;
+    top:0;
+    /* width:780px; */
+    border: 1px solid #9c69e2;
+    outline: 1px solid #9c69e2;
+    outline-offset:-10px;
+    box-sizing:border-box;
+}
+
+header>#whoAmI>.epilogue>.slides>li:nth-child(1){left:0;}
+header>#whoAmI>.epilogue>.slides>li:nth-child(2){left:0; opacity:0;}
+header>#whoAmI>.epilogue>.slides>li:nth-child(3){left:0; opacity:0;}
+header>#whoAmI>.epilogue>.slides>li:nth-child(4){left:0; opacity:0;}
+header>#whoAmI>.epilogue>.slides>li:hover{
+    border: 1px solid #02cffe;
+    outline: 1px solid #02cffe;
+}
+header>#whoAmI>.epilogue>.slides>li>h4{
+    position: absolute;
+    top:50%;
+    left:50px;
+    width:150px;
+    height:150px;
+    margin-top: -75px;
+    font-size: 18px;
+    line-height: 350px;
+    font-family: DGM;
+    text-indent: 50px;
+    white-space:nowrap;
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    border-radius:75px 75px;
+}
+header>#whoAmI>.epilogue>.slides>li:last-child>h4{
+    text-indent: 20px;
+}
+header>#whoAmI>.epilogue>.slides>li:nth-child(1)>h4{background-image: url(../images/intro_ep_tellme_01.jpg);}
+header>#whoAmI>.epilogue>.slides>li:nth-child(2)>h4{background-image: url(../images/intro_ep_tellme_02.jpg);}
+header>#whoAmI>.epilogue>.slides>li:nth-child(3)>h4{background-image: url(../images/intro_ep_tellme_03.jpg);}
+header>#whoAmI>.epilogue>.slides>li:nth-child(4)>h4{background-image: url(../images/intro_ep_tellme_04.jpg);}
+header>#whoAmI>.epilogue>.slides>li>p>img{
+    display: block;
+    width:150px;
+}
+header>#whoAmI>.epilogue>.slides>li>strong{
+    position: absolute;
+    top:70px;
+    left:50%;
+    width:200px;
+    margin-left: -100px;
+    font-size:20px ;
+    font-family: DGM;
+    white-space: nowrap;
+}
+header>#whoAmI>.epilogue>.slides>li>p:last-child{
+    position: absolute;
+    top:40%;
+    left:50%;
+    width:400px;
+    margin-left: -100px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+header>#whoAmI>.epilogue>.slide-move{
+    position: absolute;
+    top:0;
+    left:0;
+}
+header>#whoAmI>.epilogue>.slide-move>.prev{
+    position: absolute;
+    top:50%;
+    left:50px;
+    width:10%;
+    height:130px;
+    margin-top: -65px;
+    text-indent: -9999px;
+    background-image: url(../images/intro_ep_prev.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+header>#whoAmI>.epilogue>.slide-move>.prev:hover{
+    background-image: url(../images/intro_ep_prev_on.png);
+    cursor:pointer;
+}
+header>#whoAmI>.epilogue>.slide-move>.next{
+    position: absolute;
+    top:50%;
+    right:50px;
+    width:10%;
+    height:130px;
+    margin-top: -65px;
+    text-indent: -9999px;
+    background-image: url(../images/intro_ep_next.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+header>#whoAmI>.epilogue>.slide-move>.next:hover{
+    background-image: url(../images/intro_ep_next_on.png);
+    cursor:pointer;
+}
+
+@media screen and (max-width:1430px){
+    /* about me */
+    header>#whoAmI>.about{
+        background-image : none;
+    }
+}
+
+
+@media screen and (max-width:1220px){
+
+    /* about me */
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2>li>.title2,
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2>li>.info2{
+        display: none;
+    }
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1{
+        display: inline-block;
+        cursor:default;
+    }
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3{
+        display: inline-block;
+        position: initial;
+        margin-left: 50px;
+    }
+
+}
+
+
+@media screen and (max-width:1145px){
+
+    /* about me */
+    header{padding-left: 50px;}
+
+    header>.container{height:80px;}
+
+    header>.container>.cont{width:23%; font-size: 35px;}
+
+    header>.container>.con4{margin-right: 0 ;}
+
+    /* skill */
+    header>#whoAmI>.skill>.circle-bar>.container>.chart{margin-right: 1%;}
+    header>#whoAmI>.skill>.circle-bar>.container>.chart:first-child{margin-left: 1%;}
+
+    /* epilogue */
+    header>#whoAmI>.epilogue>.slides>li>p:last-child{
+        position: absolute;
+        top:40%;
+        left:50%;
+        width:350px;
+        margin-left: -100px;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    header>#whoAmI>.epilogue>.slide-move>.prev{
+        left:20px;
+    }
+
+    header>#whoAmI>.epilogue>.slide-move>.next{
+        right:20px;
+    }
+}
+
+@media screen and (max-width:1070px){
+    /* epilogue */
+    header>#whoAmI>.epilogue>.slides>li>h4{
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:150px;
+        height:150px;
+        margin-top: -75px;
+        margin-left: -75px;
+        font-size: 18px;
+        line-height: 350px;
+        font-family: DGM;
+        text-indent: 50px;
+        white-space:nowrap;
+        background-size: 150px 150px;
+        background-repeat: no-repeat;
+        border-radius:75px 75px;
+    }
+
+    header>#whoAmI>.epilogue>.slides>li>strong{
+        position: absolute;
+        top:50px;
+        left:50%;
+        width:200px;
+        margin-left: -100px;
+        text-align: center;
+        font-size:20px ;
+        font-family: DGM;
+        white-space: nowrap;
+    }
+
+    header>#whoAmI>.epilogue>.slides>li:last-child>strong{
+        margin-left: -150px;
+    }
+
+    header>#whoAmI>.epilogue>.slides>li>strong:before{
+        content:' " ';
+    }
+
+    header>#whoAmI>.epilogue>.slides>li>strong:after{
+        content:' " ';
+    }
+
+    header>#whoAmI>.epilogue>.slides>li>p:last-child{
+        display: none;
+    }
+}
+
+@media screen and (max-width:980px){
+
+    /* about me */
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2>li>.title1,
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info2>li>.info1,
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+
+    header{
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    header>.container{
+        display: block;
+        margin-top: 0;
+    }
+    
+    header>.container>.cont{
+        width:100%;
+        height:24%;
+        min-height:25px;
+        margin-right: none;
+        margin-bottom:10px;
+        font-weight: 700;
+        font-size:55px;
+        text-align: center;
+        line-height: initial;
+    }
+
+    header>.container>.cont.on{
+        color: rgba(255,255,255,1);
+        border: 1px solid #9c69e2;
+    }
+
+    header>.container>.cont:hover{
+        transform:scale(1);
+        border: 1px solid #02cffe;
+        
+    }
+    
+    /* about me */
+    header>#whoAmI{
+        margin:42px 0 0 -15px;
+        background-color: rgba(0,0,0,0.8);
+        border: none;
+        box-sizing:border-box;
+    
+        background-image: url(../images/intro_main_bg.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+
+    header>#whoAmI>.about{
+        margin-left: 5px;
+        padding:15px 30px 15px 0px;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid #9c69e2;
+    }
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1{
+        width:290px;
+    }
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text{
+        width:250px;
+        font-size: 8px;
+        line-height: 1.7;
+    }
+    
+    /* header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text:nth-child(2){width:240px;}
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text:nth-child(3){width:220px;}
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text:nth-child(4){width:250px;}
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text:nth-child(6){
+        width: 182px;
+    } */
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text:hover{color: rgba(204,2,254,1);}
+    /* header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text:nth-child(6)>strong{font-size: 17px;} */
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text:last-child{margin-bottom: 0;}
+
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info1>li.text>span{
+        font-size: 15px;
+    }
+
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3>p>span{
+        font-size: 13px;
+    }
+
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3{
+        display: inline-block;
+        width:300px;
+        margin-left: 25px;
+        margin-top: 20px;
+        /* font-size: 3rem; */
+    }
+    header>#whoAmI>.about>.container>.slides-screen>ul>li.page1>.info3>p{
+        margin-bottom: 3px;
+        font-size: 12px;
+    }
+
+    /* skill */
+    header>#whoAmI>.skill{
+        margin-top: 0;
+        margin-left: 5px;
+        padding:15px 30px 15px 0px;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid #9c69e2;
+    }
+
+    header>#whoAmI>.skill>.width-bar>.container>.block{
+        float:none;
+        width:100%;
+        height:70px;
+    }
+    
+    header>#whoAmI>.skill>.width-bar>.container>.block>h4{
+        float:left;
+        width:27%;
+        height:30px;
+        margin-right: 5%;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    header>#whoAmI>.skill>.circle-bar>.container{
+        display: flex;
+        width:100%;
+        margin-left: 10px;
+        flex-flow:wrap;
+        justify-content:space-around;
+    }
+    header>#whoAmI>.skill>.circle-bar>.container>.chart{
+        margin-right: 0;
+        margin-left: 3.5%;
+        margin-bottom: 15px;
+    }
+
+    /* portfolio */
+    header>#whoAmI>.portfolio{
+        margin-top: 0;
+        margin-left: 5px;
+        padding:15px 30px 15px 0px;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid #9c69e2;
+    }
+
+    /* epilogue */
+    header>#whoAmI>.epilogue{
+        margin-top: 0;
+        margin-left: 5px;
+        padding:15px 30px 15px 0px;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid #9c69e2;
+    }
+
+    header>#whoAmI>.epilogue>.qna{
+        font-size: 20px;
+    }
+
+    header>#whoAmI>.epilogue>.qna>span{
+        font-size: 20px;
+    }
+
+    header>#whoAmI>.epilogue>.slides{
+        overflow:hidden;
+        position: relative;
+    }
+    header>#whoAmI>.epilogue>.slides>li{
+        position: absolute;
+        top:0;
+        border: 1px solid #9c69e2;
+        outline: 1px solid #9c69e2;
+        outline-offset:-10px;
+        box-sizing:border-box;
+    }
+
+    header>#whoAmI>.epilogue>.slides>li>strong{
+        font-size: 15px;
+    }
+
+    header>#whoAmI>.epilogue>.slides>li:last-child>strong{
+        margin-left: -95px;
+        font-size: 12px;
+    }
+
+    header>#whoAmI>.epilogue>.slide-move>.prev{
+        position: absolute;
+        top:50%;
+        left:1%;
+        width:10%;
+        height:130px;
+        margin-top: -65px;
+        text-indent: -9999px;
+        background-image: url(../images/intro_ep_prev.png);
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    header>#whoAmI>.epilogue>.slide-move>.prev:hover{
+        background-image: url(../images/intro_ep_prev_on.png);
+        cursor:pointer;
+    }
+    header>#whoAmI>.epilogue>.slide-move>.next{
+        position: absolute;
+        top:50%;
+        left:85%;
+        width:10%;
+        height:130px;
+        margin-top: -65px;
+        text-indent: -9999px;
+        background-image: url(../images/intro_ep_next.png);
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    header>#whoAmI>.epilogue>.slide-move>.next:hover{
+        background-image: url(../images/intro_ep_next_on.png);
+        cursor:pointer;
+    }
+
+}
+
+#shadow{
+    display: none;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #000;
+    opacity:0.5;
+}

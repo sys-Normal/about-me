@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    header{background-color: #f00;}
+    section{background-color: #ff0;}
+    footer{background-color: #0ffd;}
+    header,section,footer{height:700px; opacity:0.3;}
+</style>
+<body>
+    <div id="wrap">
+
+        <header>1</header>
+        <section>2</section>
+        <footer>3</footer>
+    </div>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script>
+        let header = document.createElement("header");
+        let section = document.createElement("section");
+        let footer = document.createElement("footer");
+
+        let body = document.createElement("body");
+        let html = document.createElement("html");
+        
+        body.onscroll = function(){
+            console.log("작동 중");
+        };
+
+        // html.onscroll = function(){
+        //     console.log("작동 중");
+        // };
+
+    </script>
+</body>
+</html>

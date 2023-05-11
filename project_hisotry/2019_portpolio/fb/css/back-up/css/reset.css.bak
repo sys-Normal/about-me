@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+html, body{font-family:나눔고딕;}
+
+.sr-only{
+	position:absolute;
+	left:-9999px;
+}
+
+.clearfix{
+	display:block;
+	clear:both;
+	content:'';
+}

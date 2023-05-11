@@ -1,6 +1,6 @@
-# Flexible Page
+# ~~Flexible Page~~ FUN page
 
-### Goal is flexible
+### ~~Goal is flexible~~ Friendly UI Navigation
 start : 2023-05-03
 
 ### Update content
@@ -18,6 +18,9 @@ start : 2023-05-03
 
 23-05-10_1
  : design change
+
+23-05-11_1
+ : flip profile added, link each page added
 
 ### Languages
 
@@ -37,4 +40,6 @@ start : 2023-05-03
 
 [MDN_Media_queries](https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout/Media_queries)  
 [MDN_grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)  
-[Discord](https://discord.com/)  
+[Discord](https://discord.com/)
+[Favicon maker](https://www.favicon.cc/)
+[CSS clip-path-maker](https://bennettfeely.com/clippy/)

@@ -1,0 +1,7 @@
+9cb0cd main
+
+576d90 on
+
+425f9b bgc
+
+688x464 bnr size

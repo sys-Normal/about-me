@@ -11,5 +11,5 @@ function HeaderMouseEvent(data) {
 
 
 
-header.addEventListener("mouseenter", HeaderMouseEvent);
+// header.addEventListener("mouseenter", HeaderMouseEvent);
 

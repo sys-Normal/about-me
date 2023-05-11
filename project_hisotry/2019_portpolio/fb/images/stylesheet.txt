@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-facebook_movement_auto_btr {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -5px;
+}
+
+.sprite-facebook_movement_auto_btr_hover {
+    width: 25px;
+    height: 25px;
+    background-position: -40px -5px;
+}
+
+.sprite-facebook_movement_stop_btr {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -40px;
+}
+
+.sprite-facebook_movement_stop_btr_hover {
+    width: 25px;
+    height: 25px;
+    background-position: -40px -40px;
+}
